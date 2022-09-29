@@ -1,0 +1,21 @@
+.buttons_above_the_table {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons_above_the_table_teacher {
+    display: flex;
+    justify-content: end;
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.msg {
+    background-color: indianred;
+    color: #fff;
+    padding: 1%;
+    width: 100%;
+    text-align: center;
+}
+

@@ -1,0 +1,412 @@
+Uri: http://trpo/
+File Name: C:\Downloaded Web Sites\trpo\index.htm
+Content Type: text/html
+
+Uri: http://trpo/comments/feed/
+File Name: C:\Downloaded Web Sites\trpo\comments\feed\index.htm
+Content Type: application/rss+xml
+
+Uri: http://trpo/feed/
+File Name: C:\Downloaded Web Sites\trpo\feed\index.htm
+Content Type: application/rss+xml
+
+Uri: http://trpo/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.7.5
+File Name: C:\Downloaded Web Sites\trpo\wp-content\plugins\elementor-pro\assets\css\frontend-lite.min.css
+Content Type: text/css
+
+Uri: http://trpo/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.7.5
+File Name: C:\Downloaded Web Sites\trpo\wp-content\plugins\elementor-pro\assets\js\elements-handlers.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.7.5
+File Name: C:\Downloaded Web Sites\trpo\wp-content\plugins\elementor-pro\assets\js\frontend.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.7.5
+File Name: C:\Downloaded Web Sites\trpo\wp-content\plugins\elementor-pro\assets\js\webpack-pro.runtime.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.7.4
+File Name: C:\Downloaded Web Sites\trpo\wp-content\plugins\elementor\assets\css\frontend-lite.min.css
+Content Type: text/css
+
+Uri: http://trpo/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.7.4
+File Name: C:\Downloaded Web Sites\trpo\wp-content\plugins\elementor\assets\js\frontend-modules.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.7.4
+File Name: C:\Downloaded Web Sites\trpo\wp-content\plugins\elementor\assets\js\frontend.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.7.4
+File Name: C:\Downloaded Web Sites\trpo\wp-content\plugins\elementor\assets\js\webpack.runtime.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.7.4
+File Name: C:\Downloaded Web Sites\trpo\wp-content\plugins\elementor\assets\lib\animations\animations.min.css
+Content Type: text/css
+
+Uri: http://trpo/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.16.0
+File Name: C:\Downloaded Web Sites\trpo\wp-content\plugins\elementor\assets\lib\eicons\css\elementor-icons.min.css
+Content Type: text/css
+
+Uri: http://trpo/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.16.0
+File Name: C:\Downloaded Web Sites\trpo\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://trpo/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.16.0
+File Name: C:\Downloaded Web Sites\trpo\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.svg
+Content Type: image/svg+xml
+
+Uri: http://trpo/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.16.0
+File Name: C:\Downloaded Web Sites\trpo\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.ttf
+Content Type: font/ttf
+
+Uri: http://trpo/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.16.0
+File Name: C:\Downloaded Web Sites\trpo\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.woff2
+Content Type: font/woff2
+
+Uri: http://trpo/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.16.0
+File Name: C:\Downloaded Web Sites\trpo\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.woff
+Content Type: font/woff
+
+Uri: http://trpo/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2
+File Name: C:\Downloaded Web Sites\trpo\wp-content\plugins\elementor\assets\lib\waypoints\waypoints.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-content/plugins/ocean-extra/assets/css/widgets.css?ver=6.0.2
+File Name: C:\Downloaded Web Sites\trpo\wp-content\plugins\ocean-extra\assets\css\widgets.css
+Content Type: text/css
+
+Uri: http://trpo/wp-content/plugins/ocean-extra/assets/img/flickr.png
+File Name: C:\Downloaded Web Sites\trpo\wp-content\plugins\ocean-extra\assets\img\flickr.png
+Content Type: image/png
+
+Uri: http://trpo/wp-content/plugins/ocean-extra/assets/img/instagram-logo.png
+File Name: C:\Downloaded Web Sites\trpo\wp-content\plugins\ocean-extra\assets\img\instagram-logo.png
+Content Type: image/png
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/css/style.min.css?ver=3.3.5
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\css\style.min.css
+Content Type: text/css
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/css/third/simple-line-icons.min.css?ver=2.4.0
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\css\third\simple-line-icons.min.css
+Content Type: text/css
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/fontawesome/css/all.min.css?ver=5.15.1
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\fontawesome\css\all.min.css
+Content Type: text/css
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/fontawesome/webfonts/fa-brands-400.eot
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\fontawesome\webfonts\fa-brands-400.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/fontawesome/webfonts/fa-brands-400.eot?
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\fontawesome\webfonts\fa-brands-400-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/fontawesome/webfonts/fa-brands-400.svg
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\fontawesome\webfonts\fa-brands-400.svg
+Content Type: image/svg+xml
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/fontawesome/webfonts/fa-brands-400.ttf
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\fontawesome\webfonts\fa-brands-400.ttf
+Content Type: font/ttf
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/fontawesome/webfonts/fa-brands-400.woff
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\fontawesome\webfonts\fa-brands-400.woff
+Content Type: font/woff
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/fontawesome/webfonts/fa-brands-400.woff2
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\fontawesome\webfonts\fa-brands-400.woff2
+Content Type: font/woff2
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/fontawesome/webfonts/fa-regular-400.eot
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\fontawesome\webfonts\fa-regular-400.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/fontawesome/webfonts/fa-regular-400.eot?
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\fontawesome\webfonts\fa-regular-400-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/fontawesome/webfonts/fa-regular-400.svg
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\fontawesome\webfonts\fa-regular-400.svg
+Content Type: image/svg+xml
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/fontawesome/webfonts/fa-regular-400.ttf
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\fontawesome\webfonts\fa-regular-400.ttf
+Content Type: font/ttf
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/fontawesome/webfonts/fa-regular-400.woff
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\fontawesome\webfonts\fa-regular-400.woff
+Content Type: font/woff
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/fontawesome/webfonts/fa-regular-400.woff2
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\fontawesome\webfonts\fa-regular-400.woff2
+Content Type: font/woff2
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/fontawesome/webfonts/fa-solid-900.eot
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\fontawesome\webfonts\fa-solid-900.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/fontawesome/webfonts/fa-solid-900.eot?
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\fontawesome\webfonts\fa-solid-900-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/fontawesome/webfonts/fa-solid-900.svg
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\fontawesome\webfonts\fa-solid-900.svg
+Content Type: image/svg+xml
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/fontawesome/webfonts/fa-solid-900.ttf
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\fontawesome\webfonts\fa-solid-900.ttf
+Content Type: font/ttf
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/fontawesome/webfonts/fa-solid-900.woff
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\fontawesome\webfonts\fa-solid-900.woff
+Content Type: font/woff
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/fontawesome/webfonts/fa-solid-900.woff2
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\fontawesome\webfonts\fa-solid-900.woff2
+Content Type: font/woff2
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/simple-line-icons/Simple-Line-Icons.eot?v=2.4.0
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\simple-line-icons\Simple-Line-Icons.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/simple-line-icons/Simple-Line-Icons.svg?v=2.4.0
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\simple-line-icons\Simple-Line-Icons.svg
+Content Type: image/svg+xml
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/simple-line-icons/Simple-Line-Icons.ttf?v=2.4.0
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\simple-line-icons\Simple-Line-Icons.ttf
+Content Type: font/ttf
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/simple-line-icons/Simple-Line-Icons.woff2?v=2.4.0
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\simple-line-icons\Simple-Line-Icons.woff2
+Content Type: font/woff2
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/fonts/simple-line-icons/Simple-Line-Icons.woff?v=2.4.0
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\fonts\simple-line-icons\Simple-Line-Icons.woff
+Content Type: font/woff
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/js/drop-down-mobile-menu.min.js?ver=3.3.5
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\js\drop-down-mobile-menu.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/js/drop-down-search.min.js?ver=3.3.5
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\js\drop-down-search.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/js/ow-lightbox.min.js?ver=3.3.5
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\js\ow-lightbox.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/js/ow-slider.min.js?ver=3.3.5
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\js\ow-slider.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/js/scroll-effect.min.js?ver=3.3.5
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\js\scroll-effect.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/js/scroll-top.min.js?ver=3.3.5
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\js\scroll-top.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/js/select.min.js?ver=3.3.5
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\js\select.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/js/theme.min.js?ver=3.3.5
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\js\theme.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/js/vendors/flickity.pkgd.min.js?ver=3.3.5
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\js\vendors\flickity.pkgd.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-content/themes/oceanwp/assets/js/vendors/magnific-popup.min.js?ver=3.3.5
+File Name: C:\Downloaded Web Sites\trpo\wp-content\themes\oceanwp\assets\js\vendors\magnific-popup.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-content/uploads/2022/09/bluesuitbro_transparent-1-180x300.png
+File Name: C:\Downloaded Web Sites\trpo\wp-content\uploads\2022\09\bluesuitbro_transparent-1-180x300.png
+Content Type: image/png
+
+Uri: http://trpo/wp-content/uploads/2022/09/bluesuitbro_transparent-1-614x1024.png
+File Name: C:\Downloaded Web Sites\trpo\wp-content\uploads\2022\09\bluesuitbro_transparent-1-614x1024.png
+Content Type: image/png
+
+Uri: http://trpo/wp-content/uploads/2022/09/bluesuitbro_transparent-1.png
+File Name: C:\Downloaded Web Sites\trpo\wp-content\uploads\2022\09\bluesuitbro_transparent-1.png
+Content Type: image/png
+
+Uri: http://trpo/wp-content/uploads/2022/09/chris-brignola-X2CxUXFqKcM-unsplash.jpg
+File Name: C:\Downloaded Web Sites\trpo\wp-content\uploads\2022\09\chris-brignola-X2CxUXFqKcM-unsplash.jpg
+Content Type: image/jpeg
+
+Uri: http://trpo/wp-content/uploads/elementor/css/global.css?ver=1663779330
+File Name: C:\Downloaded Web Sites\trpo\wp-content\uploads\elementor\css\global.css
+Content Type: text/css
+
+Uri: http://trpo/wp-content/uploads/elementor/css/post-5.css?ver=1663780314
+File Name: C:\Downloaded Web Sites\trpo\wp-content\uploads\elementor\css\post-5.css
+Content Type: text/css
+
+Uri: http://trpo/wp-content/uploads/elementor/css/post-8.css?ver=1663778428
+File Name: C:\Downloaded Web Sites\trpo\wp-content\uploads\elementor\css\post-8.css
+Content Type: text/css
+
+Uri: http://trpo/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2
+File Name: C:\Downloaded Web Sites\trpo\wp-includes\css\dist\block-library\style.min.css
+Content Type: text/css
+
+Uri: http://trpo/wp-includes/js/dist/hooks.min.js?ver=c6d64f2cb8f5c6bb49caca37f8828ce3
+File Name: C:\Downloaded Web Sites\trpo\wp-includes\js\dist\hooks.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-includes/js/dist/i18n.min.js?ver=ebee46757c6a411e38fd079a7ac71d94
+File Name: C:\Downloaded Web Sites\trpo\wp-includes\js\dist\i18n.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9
+File Name: C:\Downloaded Web Sites\trpo\wp-includes\js\dist\vendor\regenerator-runtime.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0
+File Name: C:\Downloaded Web Sites\trpo\wp-includes\js\dist\vendor\wp-polyfill.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-includes/js/imagesloaded.min.js?ver=4.1.4
+File Name: C:\Downloaded Web Sites\trpo\wp-includes\js\imagesloaded.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2
+File Name: C:\Downloaded Web Sites\trpo\wp-includes\js\jquery\jquery-migrate.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-includes/js/jquery/jquery.min.js?ver=3.6.0
+File Name: C:\Downloaded Web Sites\trpo\wp-includes\js\jquery\jquery.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-includes/js/jquery/ui/core.min.js?ver=1.13.1
+File Name: C:\Downloaded Web Sites\trpo\wp-includes\js\jquery\ui\core.min.js
+Content Type: application/javascript
+
+Uri: http://trpo/wp-includes/wlwmanifest.xml
+File Name: C:\Downloaded Web Sites\trpo\wp-includes\wlwmanifest.xml
+Content Type: application/xml
+
+Uri: http://trpo/wp-json/
+File Name: C:\Downloaded Web Sites\trpo\wp-json\index.htm
+Content Type: application/json
+
+Uri: http://trpo/wp-json/oembed/1.0/embed?url=http:%2F%2Ftrpo%2F
+File Name: C:\Downloaded Web Sites\trpo\wp-json\oembed\1.0\embed
+Content Type: application/json
+
+Uri: http://trpo/wp-json/oembed/1.0/embed?url=http:%2F%2Ftrpo%2F&format=xml
+File Name: C:\Downloaded Web Sites\trpo\wp-json\oembed\1.0\embed-1
+Content Type: text/xml
+
+Uri: http://trpo/wp-json/wp/v2/pages/5
+File Name: C:\Downloaded Web Sites\trpo\wp-json\wp\v2\pages\5
+Content Type: application/json
+
+Uri: http://trpo/xmlrpc.php?rsd
+File Name: C:\Downloaded Web Sites\trpo\xmlrpc.php
+Content Type: text/xml
+
+Uri: https://fonts.googleapis.com/css?family=Roboto:100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic|Roboto+Slab:100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic|Vidaloka:100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=auto&subset=cyrillic&ver=6.0.2
+File Name: C:\Downloaded Web Sites\trpo\css
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOiCnqEu92Fr1Mu51QrEzQdKg.ttf
+File Name: C:\Downloaded Web Sites\trpo\s\roboto\v30\KFOiCnqEu92Fr1Mu51QrEzQdKg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51S7ACc-CsE.ttf
+File Name: C:\Downloaded Web Sites\trpo\s\roboto\v30\KFOjCnqEu92Fr1Mu51S7ACc-CsE.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TjASc-CsE.ttf
+File Name: C:\Downloaded Web Sites\trpo\s\roboto\v30\KFOjCnqEu92Fr1Mu51TjASc-CsE.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TLBCc-CsE.ttf
+File Name: C:\Downloaded Web Sites\trpo\s\roboto\v30\KFOjCnqEu92Fr1Mu51TLBCc-CsE.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TzBic-CsE.ttf
+File Name: C:\Downloaded Web Sites\trpo\s\roboto\v30\KFOjCnqEu92Fr1Mu51TzBic-CsE.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxMIzc.ttf
+File Name: C:\Downloaded Web Sites\trpo\s\roboto\v30\KFOkCnqEu92Fr1MmgVxMIzc.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1Mu51xMIzc.ttf
+File Name: C:\Downloaded Web Sites\trpo\s\roboto\v30\KFOkCnqEu92Fr1Mu51xMIzc.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fABc9.ttf
+File Name: C:\Downloaded Web Sites\trpo\s\roboto\v30\KFOlCnqEu92Fr1MmEU9fABc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fABc9.ttf
+File Name: C:\Downloaded Web Sites\trpo\s\roboto\v30\KFOlCnqEu92Fr1MmSU5fABc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfABc9.ttf
+File Name: C:\Downloaded Web Sites\trpo\s\roboto\v30\KFOlCnqEu92Fr1MmWUlfABc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfABc9.ttf
+File Name: C:\Downloaded Web Sites\trpo\s\roboto\v30\KFOlCnqEu92Fr1MmYUtfABc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu5mxP.ttf
+File Name: C:\Downloaded Web Sites\trpo\s\roboto\v30\KFOmCnqEu92Fr1Mu5mxP.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSma2Rm.ttf
+File Name: C:\Downloaded Web Sites\trpo\s\robotoslab\v24\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSma2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4Oma2Rm.ttf
+File Name: C:\Downloaded Web Sites\trpo\s\robotoslab\v24\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4Oma2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDIOma2Rm.ttf
+File Name: C:\Downloaded Web Sites\trpo\s\robotoslab\v24\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDIOma2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDISma2Rm.ttf
+File Name: C:\Downloaded Web Sites\trpo\s\robotoslab\v24\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDISma2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISma2Rm.ttf
+File Name: C:\Downloaded Web Sites\trpo\s\robotoslab\v24\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISma2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojIWma2Rm.ttf
+File Name: C:\Downloaded Web Sites\trpo\s\robotoslab\v24\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojIWma2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoJYOma2Rm.ttf
+File Name: C:\Downloaded Web Sites\trpo\s\robotoslab\v24\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoJYOma2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoUoOma2Rm.ttf
+File Name: C:\Downloaded Web Sites\trpo\s\robotoslab\v24\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoUoOma2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSma2Rm.ttf
+File Name: C:\Downloaded Web Sites\trpo\s\robotoslab\v24\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSma2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/vidaloka/v18/7cHrv4c3ipenMKlEavs7wHo.ttf
+File Name: C:\Downloaded Web Sites\trpo\s\vidaloka\v18\7cHrv4c3ipenMKlEavs7wHo.ttf
+Content Type: font/ttf
+
