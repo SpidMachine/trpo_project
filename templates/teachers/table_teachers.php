@@ -767,6 +767,14 @@ require_once "../../auth.php";
                                                     <h1 style="text-transform: uppercase;"><?= $_SESSION['user']['Level'] ?>-panel</h1>
                                                 </div>
                                                 <div>
+                                                    <a href="../subjects/table_subjects.php">
+                                                        <button type="button"
+                                                                id="sub1"
+                                                                class="elementor-size-md elementor-button"
+                                                                name="wp-submit">
+                                                            <span class="elementor-button-text">Учебные предметы</span>
+                                                        </button>
+                                                    </a>
                                                     <a href="add_data_teachers.php">
                                                         <button type="button"
                                                                 id="sub1"

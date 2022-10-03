@@ -12,10 +12,21 @@ $insert_data_experience = $_POST['insert_data_experience'];
 $insert_data_login = $_POST['insert_data_login'];
 $insert_data_password = $_POST['insert_data_password'];
 
-if ($insert_data_FIO == null || $insert_data_position == null) {
+if ($insert_data_FIO == null || $insert_data_position == null || $insert_data_speciality == null || $insert_data_category == null || $insert_data_experience == null || $insert_data_login == null || $insert_data_password == null) {
     header("Location: http://trpo/status/canceled.php");
 } else {
-    mysqli_query($link, "INSERT INTO `teachers` (`FIO`, `position`, `speciality`, `category`, `experience`, `login`, `password`) VALUES ('$insert_data_FIO', '$insert_data_position', '$insert_data_speciality', '$insert_data_category', '$insert_data_experience', '$insert_data_login', '$insert_data_password')");
+    if (!empty($_FILES['file'])) {
+        $file = $_FILES['file'];
+        $name = $file['name'];
+        $pathFile = __DIR__ ."../../../images/".$name;
+        if (!move_uploaded_file($file['tmp_name'], $pathFile)) {
+            header("Location: http://trpo/status/canceled.php");
+        }
+
+        $updated_data = mysqli_query($link, "INSERT INTO `teachers` (`FIO`, `position`, `speciality`, `category`, `experience`, `login`, `password`, `path_image`) VALUES ('$insert_data_FIO', '$insert_data_position', '$insert_data_speciality', '$insert_data_category', '$insert_data_experience', '$insert_data_login', '$insert_data_password', '$name')");
+
+    }
+
     header("Location: http://trpo/status/confirm.php");
 }
 

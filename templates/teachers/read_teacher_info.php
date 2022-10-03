@@ -804,7 +804,7 @@ $teacher_info = mysqli_fetch_assoc($teacher_info);
                                                 <div class="container_card">
                                                     <div class="teacher_header_card">
                                                         <div class="teacher_picture">
-                                                            <img src="../../images/images.jpg">
+                                                            <img src="../../images/<?= $teacher_info['path_image'] ?>">
                                                         </div>
                                                         <div class="description">
                                                             <div class="teacher_name">

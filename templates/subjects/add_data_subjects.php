@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 session_start();
 
 require_once "../../connect.php";
@@ -765,9 +765,9 @@ require_once "../../connect.php";
 
                                 <div data-elementor-type="wp-page" data-elementor-id="5" class="elementor elementor-5">
                                     <section
-                                            class="elementor-section elementor-top-section elementor-element elementor-element-6b20e447 elementor-section-height-full elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
-                                            data-id="6b20e447" data-element_type="section"
-                                            data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-6b20e447 elementor-section-height-full elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+                                        data-id="6b20e447" data-element_type="section"
+                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                         <div class="elementor-background-overlay"></div>
                                         <div class="elementor-container elementor-column-gap-wider">
                                             <form action="table_teachers.php" method="post">
@@ -784,9 +784,9 @@ require_once "../../connect.php";
                                                            value="root">
                                                 </label>
                                                 <button
-                                                        id="sub"
-                                                        class="elementor-size-md elementor-button"
-                                                        name="wp-submit">
+                                                    id="sub"
+                                                    class="elementor-size-md elementor-button"
+                                                    name="wp-submit">
                                                     <span class="elementor-button-text">Вернуться назад</span>
                                                 </button>
                                             </form>
@@ -860,9 +860,9 @@ require_once "../../connect.php";
                                                         <input type="file" name="file" style="display: flex; margin-bottom: 1%;">
                                                     </label>
                                                     <button
-                                                            id="sub1"
-                                                            class="elementor-size-md elementor-button"
-                                                            name="wp-submit" style="width: 60%;">
+                                                        id="sub1"
+                                                        class="elementor-size-md elementor-button"
+                                                        name="wp-submit" style="width: 60%;">
                                                         <span class="elementor-button-text">Добавить пользователя</span>
                                                     </button>
                                                     <?php

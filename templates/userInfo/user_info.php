@@ -783,7 +783,7 @@ $teacher_info = mysqli_fetch_assoc($teacher_info);
                                                             <button type="button"
                                                                     id="sub"
                                                                     class="elementor-size-md elementor-button"
-                                                                    name="wp-submit">
+                                                                    name="wp-submit" style="margin-bottom: 2%">
                                                                 <span class="elementor-button-text">Выйти из системы</span>
                                                             </button>
                                                         </a>
@@ -792,7 +792,7 @@ $teacher_info = mysqli_fetch_assoc($teacher_info);
                                                 <div class="container_card">
                                                     <div class="teacher_header_card">
                                                         <div class="teacher_picture">
-                                                            <img src="../../images/images.jpg">
+                                                            <img src="../../images/<?= $teacher_info['path_image'] ?>" alt="">
                                                         </div>
                                                         <div class="description">
                                                             <div class="teacher_name">

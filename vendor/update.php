@@ -21,6 +21,15 @@ if (empty($insert_data_FIO)) {
     $insert_data_experience = mysqli_query($link,"UPDATE `teachers` SET `experience` = '<blank>' WHERE `teachers`.`id` = '$id'");
 }
 
-mysqli_query($link, "UPDATE `teachers` SET `FIO` = '$insert_data_FIO', `position` = '$insert_data_position', `speciality` = '$insert_data_speciality', `category` = '$insert_data_category', `experience` = '$insert_data_experience' WHERE `teachers`.`id` = '$id'");
+if (!empty($_FILES['file'])) {
+    $file = $_FILES['file'];
+    $name = $file['name'];
+    $pathFile = __DIR__ ."../../images/".$name;
+    move_uploaded_file($file['tmp_name'], $pathFile);
+
+    mysqli_query($link, "UPDATE `teachers` SET `FIO` = '$insert_data_FIO', `position` = '$insert_data_position', `speciality` = '$insert_data_speciality', `category` = '$insert_data_category', `experience` = '$insert_data_experience', `path_image` = '$name' WHERE `teachers`.`id` = '$id'");
+
+}
+
 
 header("Location: ../status/confirm.php");
