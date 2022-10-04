@@ -16,6 +16,7 @@ require_once "../../auth.php";
     <link rel="alternate" type="application/rss+xml" title="TRPO &raquo; Лента" href="../../feed/index.htm">
     <link rel="alternate" type="application/rss+xml" title="TRPO &raquo; Лента комментариев"
           href="../../comments/feed/index.htm">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script>
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
@@ -764,23 +765,35 @@ require_once "../../auth.php";
                                         <div class="container">
                                             <div class="buttons_above_the_table">
                                                 <div>
-                                                    <h1 style="text-transform: uppercase;"><?= $_SESSION['user']['Level'] ?>-panel</h1>
+                                                    <h1 style="text-transform: uppercase; font-weight: bold;">Админ-панель👑</h1>
                                                 </div>
-                                                <div>
-                                                    <a href="../teachers/add_data_teachers.php">
-                                                        <button type="button"
-                                                                id="sub1"
-                                                                class="elementor-size-md elementor-button"
-                                                                name="wp-submit">
-                                                            <span class="elementor-button-text">Преподаватели</span>
-                                                        </button>
-                                                    </a>
+                                                <div style="display: inline-flex">
+                                                    <form action="../teachers/table_teachers.php" method="post">
+                                                        <input type="submit"
+                                                               id="sub1"
+                                                               class="elementor-size-md elementor-button"
+                                                               name="wp-submit" value="Преподаватели">
+<!--                                                        <span class="elementor-button-text">Преподаватели</span>-->
+
+                                                        <label>
+                                                            <input style="display: none" name="user"
+                                                                   id="user"
+                                                                   type="text"
+                                                                   value="root">
+                                                        </label>
+                                                        <label>
+                                                            <input style="display: none" name="password"
+                                                                   id="password"
+                                                                   type="password"
+                                                                   value="root">
+                                                        </label>
+                                                    </form>
                                                     <a href="add_data_subjects.php">
                                                         <button type="button"
                                                                 id="sub1"
                                                                 class="elementor-size-md elementor-button"
                                                                 name="wp-submit">
-                                                            <span class="elementor-button-text">Добавить пользователя</span>
+                                                            <span class="elementor-button-text">Добавить дисциплину</span>
                                                         </button>
                                                     </a>
                                                     <a href="../../mainIndex.php">
@@ -793,32 +806,57 @@ require_once "../../auth.php";
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div>
-                                                <table class="table_blur">
-                                                    <tr>
-                                                        <th>ФИО</th>
-                                                        <th>Должность</th>
-                                                        <th></th>
-                                                    </tr>
-                                                    <?php
-
-                                                    while ($row = $sql->fetch_assoc())// получаем все строки в цикле по одной
-                                                    {
-                                                        echo "<tr>";
-                                                        echo "<td>" . $row["FIO"] . "</td>";
-                                                        echo "<td>" . $row["position"] . "</td>";
-                                                        ?>
-                                                        <td style='display: flex; justify-content: space-around'><a href="../../vendor/delete.php?id=<?= $row["id"] ?>"><button style='background-color: red; width: 30px'>✖</button></a>
-                                                            <a href='update_teachers.php?id=<?=$row["id"]?>'><button style='background-color: #0ca5de; width: 30px'>✎</button></a>
-                                                            <a href="read_teacher_info.php?id=<?= $row['id'] ?>"><button style='background-color: #75f155; width: 30px'>🛈</button></a></td>
-                                                        <?php
-                                                        echo "</tr>";
-                                                    }
-
-                                                    ?>
-                                                </table>
+                                            <div class="table_blur">
+<!--                                                <table class="table_blur">-->
+<!--                                                    <tr>-->
+<!--                                                        <th>Название</th>-->
+<!--                                                        <th>Для какой специальности</th>-->
+<!--                                                        <th>Кол-во часов</th>-->
+<!--                                                        <th></th>-->
+<!--                                                    </tr>-->
+<!--                                                    --><?php
+//
+//                                                    while ($row = $sql_subject->fetch_assoc())// получаем все строки в цикле по одной
+//                                                    {
+//                                                        echo "<tr>";
+//                                                        echo "<td>" . $row["name"] . "</td>";
+//                                                        echo "<td>" . $row["speciality"] . "</td>";
+//                                                        echo "<td>" . $row["hours"] . "</td>";
+//                                                        ?>
+<!--                                                        <td style='display: flex; justify-content: space-around'>-->
+<!--                                                            <a href="../../vendor/subjects/delete.php?id=--><?//= $row["id"]?><!--">-->
+<!--                                                            <button style='background-color: red; width: 30px'>✖</button></a>-->
+<!--                                                            <a href='update_subjects.php?id=--><?//=$row["id"]?><!--'><button style='background-color: #0ca5de; width: 30px'>✎</button></a>-->
+<!--<!--                                                            <a href="read_teacher_info.php?id=-->--><?////= $row['id'] ?><!--<!--"><button style='background-color: #75f155; width: 30px'>🛈</button></a></td>-->-->
+<!--                                                        --><?php
+//                                                        echo "</tr>";
+//                                                    }
+//
+//                                                    ?>
+<!--                                                </table>-->
                                             </div>
                                         </div>
+                                        <script>
+                                            $(document).ready(function() {
+                                                load_data();
+                                                function load_data(page) {
+                                                    $.ajax({
+                                                        url:"pagination_disciplina.php",
+                                                        method:"POST",
+                                                        data:{page:page},
+                                                        success:function (data) {
+                                                            $('.table_blur').html(data);
+                                                        }
+                                                    })
+                                                }
+
+                                                $(document).on('click', '.pagination_link', function () {
+                                                    let page = $(this).attr("id");
+                                                    load_data(page);
+                                                })
+                                            })
+
+                                        </script>
                                 </div>
                             </div>
                     </div>

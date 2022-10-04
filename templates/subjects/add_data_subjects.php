@@ -770,7 +770,7 @@ require_once "../../connect.php";
                                         data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                         <div class="elementor-background-overlay"></div>
                                         <div class="elementor-container elementor-column-gap-wider">
-                                            <form action="table_teachers.php" method="post">
+                                            <form action="table_subjects.php" method="post">
                                                 <label>
                                                     <input style="display: none" name="user"
                                                            id="user"
@@ -790,7 +790,7 @@ require_once "../../connect.php";
                                                     <span class="elementor-button-text">Вернуться назад</span>
                                                 </button>
                                             </form>
-                                            <form action="function.php" enctype="multipart/form-data" method="post">
+                                            <form action="function_add_subjects.php" method="post">
                                                 <label>
                                                     <input style="display: none" name="user"
                                                            id="user"
@@ -807,64 +807,29 @@ require_once "../../connect.php";
                                                 <div class="elementor-column elementor-field-type-submit elementor-col-100"
                                                      style="margin-left: 15%; align-items: baseline; display: table;">
                                                     <label>
-                                                        <input id="insert_data_FIO" name="insert_data_FIO" style="background-color: white;
+                                                        <input id="insert_data_subject_name" name="insert_data_subject_name" style="background-color: white;
         background-position: 10px 10px;
         background-repeat: no-repeat;
-        padding: 10px; padding-left: 30px; margin-bottom: 1%" placeholder="ФИО" type="text">
+        padding: 10px; padding-left: 30px; margin-bottom: 1%" placeholder="Название предмета" type="text">
                                                     </label>
                                                     <label>
-                                                        <input id="insert_data_position" name="insert_data_position"
+                                                        <input id="insert_data_subject_speciality" name="insert_data_subject_speciality"
                                                                style="background-color: white;
         background-position: 10px 10px;
         background-repeat: no-repeat;
-        padding: 10px; padding-left: 30px; margin-bottom: 1%" placeholder="Должность" type="text">
+        padding: 10px; padding-left: 30px; margin-bottom: 1%" placeholder="Для какой специальности" type="text">
                                                     </label>
                                                     <label>
-                                                        <input id="insert_data_speciality" name="insert_data_speciality"
+                                                        <input id="insert_data_subject_hours" name="insert_data_subject_hours"
                                                                style="background-color: white;
         background-position: 10px 10px;
         background-repeat: no-repeat;
-        padding: 10px; padding-left: 30px; margin-bottom: 1%" placeholder="Специальность" type="text">
+        padding: 10px; padding-left: 30px; margin-bottom: 1%" placeholder="Кол-во часов" type="number">
                                                     </label>
-                                                    <label>
-                                                        <input id="insert_data_category" name="insert_data_category"
-                                                               style="background-color: white;
-        background-position: 10px 10px;
-        background-repeat: no-repeat;
-        padding: 10px; padding-left: 30px; margin-bottom: 1%" placeholder="Категория" type="text"><br>
-                                                    </label>
-                                                    <label>
-                                                        <input id="insert_data_experience" name="insert_data_experience"
-                                                               style="background-color: white;
-        background-position: 10px 10px;
-        background-repeat: no-repeat;
-        padding: 10px; padding-left: 30px; margin-bottom: 1%" placeholder="Стаж" type="number"><br>
-                                                    </label>
-                                                    <label>
-                                                        <input id="insert_data_login"
-                                                               name="insert_data_login"
-                                                               style="background-color: white;
-        background-position: 10px 10px;
-        background-repeat: no-repeat;
-        padding: 10px; padding-left: 30px; margin-bottom: 1%" placeholder="Логин" type="text"><br>
-                                                    </label>
-                                                    <label>
-                                                        <input id="insert_data_password"
-                                                               name="insert_data_password"
-                                                               style="background-color: white;
-        background-position: 10px 10px;
-        background-repeat: no-repeat;
-        padding: 10px; padding-left: 30px; margin-bottom: 1%" placeholder="Пароль" type="text"><br>
-                                                    </label>
-                                                    <label>
-                                                        <input type="file" name="file" style="display: flex; margin-bottom: 1%;">
-                                                    </label>
-                                                    <button
+                                                    <input
                                                         id="sub1"
                                                         class="elementor-size-md elementor-button"
-                                                        name="wp-submit" style="width: 60%;">
-                                                        <span class="elementor-button-text">Добавить пользователя</span>
-                                                    </button>
+                                                        name="wp-submit" style="width: 60%;" value="Добавить дисциплину" type="submit">
                                                     <?php
                                                     if (isset($_SESSION['message'])) {
                                                         echo '<span class="msg">' . $_SESSION['message'] . '</span>';

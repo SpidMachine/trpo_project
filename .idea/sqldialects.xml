@@ -3,13 +3,16 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/auth.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/do_login.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/templates/subjects/update_subjects.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/templates/teachers/add_data_teachers.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/templates/teachers/function.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/templates/teachers/read_teacher_info.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/templates/teachers/table_teachers.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/templates/teachers/update_teachers.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/templates/userInfo/user_info.php" dialect="GenericSQL" />
-    <file url="file://$PROJECT_DIR$/vendor/delete.php" dialect="GenericSQL" />
-    <file url="file://$PROJECT_DIR$/vendor/update.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/vendor/subjects/delete.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/vendor/subjects/update.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/vendor/teachers/delete.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/vendor/teachers/update.php" dialect="GenericSQL" />
   </component>
 </project>

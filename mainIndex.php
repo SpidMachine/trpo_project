@@ -775,7 +775,7 @@ session_start();
                                                                     font-size: 59px
                                                                 }</style>
                                                             <h1 class="elementor-heading-title elementor-size-default">
-                                                                Система Кафедра</h1></div>
+                                                                Система Кафедры</h1></div>
                                                     </div>
                                                     <div class="elementor-element elementor-element-6b71cb1e elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
                                                          data-id="6b71cb1e" data-element_type="widget"
@@ -1214,7 +1214,9 @@ session_start();
                                                                 .elementor-select-wrapper.remove-before:before {
                                                                     content: "" !important
                                                                 }</style>
-                                                            <form class="elementor-login elementor-form" action="templates/teachers/table_teachers.php" method="post">
+                                                            <form class="elementor-login elementor-form"
+                                                                  action="templates/teachers/table_teachers.php"
+                                                                  method="post">
                                                                 <input type="hidden" name="redirect_to" value="/">
                                                                 <div class="elementor-form-fields-wrapper">
                                                                     <div class="elementor-field-type-text elementor-field-group elementor-column elementor-col-100 elementor-field-required">
@@ -1236,7 +1238,7 @@ session_start();
                                                                                                               class="elementor-field elementor-field-textual elementor-size-md">
                                                                     </div>
                                                                     <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100">
-                                                                        <input type="submit" value="Войти" style="font-size: larger; width: inherit; background-color: #384975">
+                                                                        <input type="submit" value="Войти" style="width: inherit;background-color: #384975;border-radius: 4px;padding: 2%;color: white;font-size: 22px;font-weight: bold;">
                                                                     </div>
                                                                     <?php
                                                                     if (isset($_SESSION['message'])) {

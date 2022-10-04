@@ -13,6 +13,7 @@ $user_access_arr = $user_access->fetch_assoc();
 
 if ($user['Login'] == $login && $user['Password'] == $password) {
     $sql = $link->query("SELECT * FROM `teachers`");
+    $sql_subject = $link->query("SELECT * FROM `disciplina`");
 } else if ($user_access_arr['login'] == $login && $user_access_arr['password'] == $password) {
     $userID = $user_access_arr['id'];
     $_SESSION['userid'] = $userID;

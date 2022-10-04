@@ -792,7 +792,7 @@ $teacher = mysqli_fetch_assoc($teacher);
                                                     <span class="elementor-button-text">Вернуться назад</span>
                                                 </button>
                                             </form>
-                                            <form action="../../vendor/update.php" enctype="multipart/form-data" method="post">
+                                            <form action="../../vendor/teachers/update.php" enctype="multipart/form-data" method="post">
                                                 <label>
                                                     <input style="display: none" name="user"
                                                            id="user"

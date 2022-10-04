@@ -1,8 +1,14 @@
-﻿<?php
+<?php
 session_start();
-require_once "../../auth.php";
+require_once "../connect.php";
+
+$id = $_SESSION['userid'];
+
+$teacher_info = mysqli_query($link, "SELECT * FROM `teachers` WHERE `id` = '$id'");
+$teacher_info = mysqli_fetch_assoc($teacher_info);
 
 ?>
+
 <!DOCTYPE html>
 <html class="html" lang="ru-RU">
 <head>
@@ -16,7 +22,8 @@ require_once "../../auth.php";
     <link rel="alternate" type="application/rss+xml" title="TRPO &raquo; Лента" href="../../feed/index.htm">
     <link rel="alternate" type="application/rss+xml" title="TRPO &raquo; Лента комментариев"
           href="../../comments/feed/index.htm">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../styles/teacher_info_style.css">
+    <link rel="stylesheet" href="../../styles/mainStyle.css.css">
     <script>
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
@@ -535,7 +542,6 @@ require_once "../../auth.php";
     <link rel="alternate" type="text/xml+oembed"
           href="../../wp-json/oembed/1.0/embed-1?url=http%3A%2F%2Ftrpo%2F&#038;format=xml">
     <!-- OceanWP CSS -->
-    <link rel="stylesheet" href="../../styles/mainStyle.css">
     <style type="text/css">
         /* Header CSS */
         #site-header.has-header-media .overlay-header-media {
@@ -583,7 +589,6 @@ require_once "../../auth.php";
             border-right: 1px solid #777777;
             border-bottom: 1px solid #777777;
             box-shadow: inset -1px 1px 0 #999999, inset 0 -1px 0 #999999;
-            width: 20%;
         }
 
         .table_blur td {
@@ -591,7 +596,6 @@ require_once "../../auth.php";
             padding: 10px 15px;
             position: relative;
             transition: all 0.5s ease;
-            font-weight: bold;
         }
 
         .table_blur tbody:hover td {
@@ -766,119 +770,56 @@ require_once "../../auth.php";
 
                                 <div data-elementor-type="wp-page" data-elementor-id="5" class="elementor elementor-5">
                                     <section
-                                            class="elementor-section elementor-top-section elementor-element elementor-element-6b20e447 elementor-section-height-full elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
-                                            data-id="6b20e447" data-element_type="section"
-                                            data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                        <div class="container">
-                                            <div class="buttons_above_the_table">
-                                                <div>
-                                                    <h1 style="text-transform: uppercase; font-weight: bold;">Админ-панель👑</h1>
-                                                </div>
-                                                <div style="display: inline-flex">
-                                                    <!--                                                    <a href="../subjects/table_subjects.php">-->
-                                                    <form action="../subjects/table_subjects.php" method="post">
-                                                        <input type="submit"
-                                                               id="sub1"
-                                                               class="elementor-size-md elementor-button"
-                                                               name="wp-submit" value="Дисциплины">
-<!--                                                        <span class="elementor-button-text">Учебные предметы</span>-->
-
-                                                        <label>
-                                                            <input style="display: none" name="user"
-                                                                   id="user"
-                                                                   type="text"
-                                                                   value="root">
-                                                        </label>
-                                                        <label>
-                                                            <input style="display: none" name="password"
-                                                                   id="password"
-                                                                   type="password"
-                                                                   value="root">
-                                                        </label>
-                                                    </form>
-                                                    <!--                                                    </a>-->
-                                                    <a href="add_data_teachers.php">
-                                                        <button type="button"
-                                                                id="sub1"
-                                                                class="elementor-size-md elementor-button"
-                                                                name="wp-submit">
-                                                            <span class="elementor-button-text">Добавить пользователя</span>
-                                                        </button>
-                                                    </a>
-                                                    <a href="../../mainIndex.php">
-                                                        <button type="button"
-                                                                id="sub"
-                                                                class="elementor-size-md elementor-button"
-                                                                name="wp-submit">
-                                                            <span class="elementor-button-text">Выйти из системы</span>
-                                                        </button>
-                                                    </a>
-                                                </div>
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-6b20e447 elementor-section-height-full elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+                                        data-id="6b20e447" data-element_type="section"
+                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        <div class="elementor-background-overlay"></div>
+                                        <div class="elementor-container elementor-column-gap-wider" style="align-items: start">
+                                            <div class="container">
+                                                <form action="../templates/subjects/table_subjects.php" method="post" style="margin-left: auto;
+            margin-right: auto; width: 22em;
+    margin-top: 23%;">
+                                                    <label>
+                                                        <input style="display: none" name="user"
+                                                               id="user"
+                                                               type="text"
+                                                               value="root">
+                                                    </label>
+                                                    <label>
+                                                        <input style="display: none" name="password"
+                                                               id="password"
+                                                               type="password"
+                                                               value="root">
+                                                    </label>
+                                                    <button type="submit"
+                                                            id="sub"
+                                                            class="elementor-size-md elementor-button"
+                                                            name="wp-submit" style="
+            cursor: pointer;
+    line-height: 1;
+    background-color: #4abb57;
+    font-size: 15px;
+    padding: 12px 24px;
+    border-radius: 3px;
+    color: #fff;
+    fill: #fff;
+    text-align: center;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;">
+                                                        <span class="elementor-button-text" style="text-transform: uppercase">Операция успешно выполнена!</span>
+                                                    </button>
+                                                </form>
                                             </div>
-                                            <div class="table_blur">
-<!--                                                <table class="table_blur">-->
-<!--                                                    <tr>-->
-<!--                                                        <th>ФИО</th>-->
-<!--                                                        <th>Должность</th>-->
-<!--                                                        <th></th>-->
-<!--                                                    </tr>-->
-<!--                                                    --><?php
-//
-//                                                    while ($row = $sql->fetch_assoc())// получаем все строки в цикле по одной
-//                                                    {
-//                                                        echo "<tr>";
-//                                                        echo "<td>" . $row["FIO"] . "</td>";
-//                                                        echo "<td>" . $row["position"] . "</td>";
-//                                                        ?>
-<!--                                                        <td style='display: flex; justify-content: space-around'>-->
-<!--                                                            <a href="../../vendor/teachers/delete.php?id=--><?//= $row["id"] ?><!--">-->
-<!--                                                                <button style='background-color: red; width: 30px'>-->
-<!--                                                                    ✖-->
-<!--                                                                </button>-->
-<!--                                                            </a>-->
-<!--                                                            <a href='update_teachers.php?id=--><?//= $row["id"] ?><!--'>-->
-<!--                                                                <button style='background-color: #0ca5de; width: 30px'>-->
-<!--                                                                    ✎-->
-<!--                                                                </button>-->
-<!--                                                            </a>-->
-<!--                                                            <a href="read_teacher_info.php?id=--><?//= $row['id'] ?><!--">-->
-<!--                                                                <button style='background-color: #75f155; width: 30px'>-->
-<!--                                                                    🛈-->
-<!--                                                                </button>-->
-<!--                                                            </a></td>-->
-<!--                                                        --><?php
-//                                                        echo "</tr>";
-//                                                    }
-//
-//                                                    ?>
-<!--                                                </table>-->
-                                            </div>
-                                        </div>
+                                    </section>
                                 </div>
                             </div>
+
+
                     </div>
 
-                    <script>
-                        $(document).ready(function() {
-                            load_data();
-                            function load_data(page) {
-                                $.ajax({
-                                    url:"pagination.php",
-                                    method:"POST",
-                                    data:{page:page},
-                                    success:function (data) {
-                                        $('.table_blur').html(data);
-                                    }
-                                })
-                            }
+                    </article>
 
-                            $(document).on('click', '.pagination_link', function () {
-                                let page = $(this).attr("id");
-                                load_data(page);
-                            })
-                        })
-
-                    </script>
 
                 </div><!-- #content -->
 
@@ -900,198 +841,196 @@ require_once "../../auth.php";
 
 <a aria-label="Перейти наверх страницы" href="#" id="scroll-top" class="scroll-top-right"><i class=" fa fa-angle-up"
                                                                                              aria-hidden="true"
-                                                                                             role="img"></i></td>
+                                                                                             role="img"></i></a>
 
 
-    <link rel='stylesheet' id='e-animations-css'
-          href='../../wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.7.4' media='all'>
-    <script src='../../wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
-    <script id='oceanwp-main-js-extra'>
-        var oceanwpLocalize = {
-            "nonce": "a6eff16672",
-            "isRTL": "",
-            "menuSearchStyle": "drop_down",
-            "mobileMenuSearchStyle": "disabled",
-            "sidrSource": null,
-            "sidrDisplace": "1",
-            "sidrSide": "left",
-            "sidrDropdownTarget": "link",
-            "verticalHeaderTarget": "link",
-            "customSelects": ".woocommerce-ordering .orderby, #dropdown_product_cat, .widget_categories select, .widget_archive select, .single-product .variations_form .variations select",
-            "ajax_url": "http:\/\/trpo\/wp-admin\/admin-ajax.php"
-        };
-    </script>
-    <script src='../../wp-content/themes/oceanwp/assets/js/theme.min.js?ver=3.3.5' id='oceanwp-main-js'></script>
-    <script src='../../wp-content/themes/oceanwp/assets/js/drop-down-mobile-menu.min.js?ver=3.3.5'
-            id='oceanwp-drop-down-mobile-menu-js'></script>
-    <script src='../../wp-content/themes/oceanwp/assets/js/drop-down-search.min.js?ver=3.3.5'
-            id='oceanwp-drop-down-search-js'></script>
-    <script src='../../wp-content/themes/oceanwp/assets/js/vendors/magnific-popup.min.js?ver=3.3.5'
-            id='ow-magnific-popup-js'></script>
-    <script src='../../wp-content/themes/oceanwp/assets/js/ow-lightbox.min.js?ver=3.3.5'
-            id='oceanwp-lightbox-js'></script>
-    <script src='../../wp-content/themes/oceanwp/assets/js/vendors/flickity.pkgd.min.js?ver=3.3.5'
-            id='ow-flickity-js'></script>
-    <script src='../../wp-content/themes/oceanwp/assets/js/ow-slider.min.js?ver=3.3.5' id='oceanwp-slider-js'></script>
-    <script src='../../wp-content/themes/oceanwp/assets/js/scroll-effect.min.js?ver=3.3.5'
-            id='oceanwp-scroll-effect-js'></script>
-    <script src='../../wp-content/themes/oceanwp/assets/js/scroll-top.min.js?ver=3.3.5'
-            id='oceanwp-scroll-top-js'></script>
-    <script src='../../wp-content/themes/oceanwp/assets/js/select.min.js?ver=3.3.5' id='oceanwp-select-js'></script>
-    <script src='../../wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.7.5'
-            id='elementor-pro-webpack-runtime-js'></script>
-    <script src='../../wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.7.4'
-            id='elementor-webpack-runtime-js'></script>
-    <script src='../../wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.7.4'
-            id='elementor-frontend-modules-js'></script>
-    <script src='../../wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9'
-            id='regenerator-runtime-js'></script>
-    <script src='../../wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
-    <script src='../../wp-includes/js/dist/hooks.min.js?ver=c6d64f2cb8f5c6bb49caca37f8828ce3' id='wp-hooks-js'></script>
-    <script src='../../wp-includes/js/dist/i18n.min.js?ver=ebee46757c6a411e38fd079a7ac71d94' id='wp-i18n-js'></script>
-    <script id='wp-i18n-js-after'>
-        wp.i18n.setLocaleData({'text direction\u0004ltr': ['ltr']});
-    </script>
-    <script id='elementor-pro-frontend-js-before'>
-        var ElementorProFrontendConfig = {
-            "ajaxurl": "http:\/\/trpo\/wp-admin\/admin-ajax.php",
-            "nonce": "8d2f22be00",
-            "urls": {
-                "assets": "http:\/\/trpo\/wp-content\/plugins\/elementor-pro\/assets\/",
-                "rest": "http:\/\/trpo\/wp-json\/"
-            },
-            "shareButtonsNetworks": {
-                "facebook": {"title": "Facebook", "has_counter": true},
-                "twitter": {"title": "Twitter"},
-                "linkedin": {"title": "LinkedIn", "has_counter": true},
-                "pinterest": {"title": "Pinterest", "has_counter": true},
-                "reddit": {"title": "Reddit", "has_counter": true},
-                "vk": {"title": "VK", "has_counter": true},
-                "odnoklassniki": {"title": "OK", "has_counter": true},
-                "tumblr": {"title": "Tumblr"},
-                "digg": {"title": "Digg"},
-                "skype": {"title": "Skype"},
-                "stumbleupon": {"title": "StumbleUpon", "has_counter": true},
-                "mix": {"title": "Mix"},
-                "telegram": {"title": "Telegram"},
-                "pocket": {"title": "Pocket", "has_counter": true},
-                "xing": {"title": "XING", "has_counter": true},
-                "whatsapp": {"title": "WhatsApp"},
-                "email": {"title": "Email"},
-                "print": {"title": "Print"}
-            },
-            "facebook_sdk": {"lang": "ru_RU", "app_id": ""},
-            "lottie": {"defaultAnimationUrl": "http:\/\/trpo\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}
-        };
-    </script>
-    <script src='../../wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.7.5'
-            id='elementor-pro-frontend-js'></script>
-    <script src='../../wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2'
-            id='elementor-waypoints-js'></script>
-    <script src='../../wp-includes/js/jquery/ui/core.min.js?ver=1.13.1' id='jquery-ui-core-js'></script>
-    <script id='elementor-frontend-js-before'>
-        var elementorFrontendConfig = {
-            "environmentMode": {"edit": false, "wpPreview": false, "isScriptDebug": false},
-            "i18n": {
-                "shareOnFacebook": "\u041f\u043e\u0434\u0435\u043b\u0438\u0442\u044c\u0441\u044f \u0432 Facebook",
-                "shareOnTwitter": "\u041f\u043e\u0434\u0435\u043b\u0438\u0442\u044c\u0441\u044f \u0432 Twitter",
-                "pinIt": "\u0417\u0430\u043f\u0438\u043d\u0438\u0442\u044c",
-                "download": "\u0421\u043a\u0430\u0447\u0430\u0442\u044c",
-                "downloadImage": "\u0421\u043a\u0430\u0447\u0430\u0442\u044c \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435",
-                "fullscreen": "\u0412\u043e \u0432\u0435\u0441\u044c \u044d\u043a\u0440\u0430\u043d",
-                "zoom": "\u0423\u0432\u0435\u043b\u0438\u0447\u0435\u043d\u0438\u0435",
-                "share": "\u041f\u043e\u0434\u0435\u043b\u0438\u0442\u044c\u0441\u044f",
-                "playVideo": "\u041f\u0440\u043e\u0438\u0433\u0440\u0430\u0442\u044c \u0432\u0438\u0434\u0435\u043e",
-                "previous": "\u041d\u0430\u0437\u0430\u0434",
-                "next": "\u0414\u0430\u043b\u0435\u0435",
-                "close": "\u0417\u0430\u043a\u0440\u044b\u0442\u044c"
-            },
-            "is_rtl": false,
-            "breakpoints": {"xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600},
-            "responsive": {
-                "breakpoints": {
-                    "mobile": {
-                        "label": "\u0422\u0435\u043b\u0435\u0444\u043e\u043d",
-                        "value": 767,
-                        "default_value": 767,
-                        "direction": "max",
-                        "is_enabled": true
-                    },
-                    "mobile_extra": {
-                        "label": "\u0422\u0435\u043b\u0435\u0444\u043e\u043d \u0414\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0435",
-                        "value": 880,
-                        "default_value": 880,
-                        "direction": "max",
-                        "is_enabled": false
-                    },
-                    "tablet": {
-                        "label": "\u041f\u043b\u0430\u043d\u0448\u0435\u0442",
-                        "value": 1024,
-                        "default_value": 1024,
-                        "direction": "max",
-                        "is_enabled": true
-                    },
-                    "tablet_extra": {
-                        "label": "\u041f\u043b\u0430\u043d\u0448\u0435\u0442 \u0414\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0435",
-                        "value": 1200,
-                        "default_value": 1200,
-                        "direction": "max",
-                        "is_enabled": false
-                    },
-                    "laptop": {
-                        "label": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a",
-                        "value": 1366,
-                        "default_value": 1366,
-                        "direction": "max",
-                        "is_enabled": false
-                    },
-                    "widescreen": {
-                        "label": "\u0428\u0438\u0440\u043e\u043a\u043e\u0444\u043e\u0440\u043c\u0430\u0442\u043d\u044b\u0435",
-                        "value": 2400,
-                        "default_value": 2400,
-                        "direction": "min",
-                        "is_enabled": false
-                    }
+<link rel='stylesheet' id='e-animations-css'
+      href='../../wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.7.4' media='all'>
+<script src='../../wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script id='oceanwp-main-js-extra'>
+    var oceanwpLocalize = {
+        "nonce": "a6eff16672",
+        "isRTL": "",
+        "menuSearchStyle": "drop_down",
+        "mobileMenuSearchStyle": "disabled",
+        "sidrSource": null,
+        "sidrDisplace": "1",
+        "sidrSide": "left",
+        "sidrDropdownTarget": "link",
+        "verticalHeaderTarget": "link",
+        "customSelects": ".woocommerce-ordering .orderby, #dropdown_product_cat, .widget_categories select, .widget_archive select, .single-product .variations_form .variations select",
+        "ajax_url": "http:\/\/trpo\/wp-admin\/admin-ajax.php"
+    };
+</script>
+<script src='../../wp-content/themes/oceanwp/assets/js/theme.min.js?ver=3.3.5' id='oceanwp-main-js'></script>
+<script src='../../wp-content/themes/oceanwp/assets/js/drop-down-mobile-menu.min.js?ver=3.3.5'
+        id='oceanwp-drop-down-mobile-menu-js'></script>
+<script src='../../wp-content/themes/oceanwp/assets/js/drop-down-search.min.js?ver=3.3.5'
+        id='oceanwp-drop-down-search-js'></script>
+<script src='../../wp-content/themes/oceanwp/assets/js/vendors/magnific-popup.min.js?ver=3.3.5'
+        id='ow-magnific-popup-js'></script>
+<script src='../../wp-content/themes/oceanwp/assets/js/ow-lightbox.min.js?ver=3.3.5' id='oceanwp-lightbox-js'></script>
+<script src='../../wp-content/themes/oceanwp/assets/js/vendors/flickity.pkgd.min.js?ver=3.3.5'
+        id='ow-flickity-js'></script>
+<script src='../../wp-content/themes/oceanwp/assets/js/ow-slider.min.js?ver=3.3.5' id='oceanwp-slider-js'></script>
+<script src='../../wp-content/themes/oceanwp/assets/js/scroll-effect.min.js?ver=3.3.5'
+        id='oceanwp-scroll-effect-js'></script>
+<script src='../../wp-content/themes/oceanwp/assets/js/scroll-top.min.js?ver=3.3.5' id='oceanwp-scroll-top-js'></script>
+<script src='../../wp-content/themes/oceanwp/assets/js/select.min.js?ver=3.3.5' id='oceanwp-select-js'></script>
+<script src='../../wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.7.5'
+        id='elementor-pro-webpack-runtime-js'></script>
+<script src='../../wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.7.4'
+        id='elementor-webpack-runtime-js'></script>
+<script src='../../wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.7.4'
+        id='elementor-frontend-modules-js'></script>
+<script src='../../wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9'
+        id='regenerator-runtime-js'></script>
+<script src='../../wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script src='../../wp-includes/js/dist/hooks.min.js?ver=c6d64f2cb8f5c6bb49caca37f8828ce3' id='wp-hooks-js'></script>
+<script src='../../wp-includes/js/dist/i18n.min.js?ver=ebee46757c6a411e38fd079a7ac71d94' id='wp-i18n-js'></script>
+<script id='wp-i18n-js-after'>
+    wp.i18n.setLocaleData({'text direction\u0004ltr': ['ltr']});
+</script>
+<script id='elementor-pro-frontend-js-before'>
+    var ElementorProFrontendConfig = {
+        "ajaxurl": "http:\/\/trpo\/wp-admin\/admin-ajax.php",
+        "nonce": "8d2f22be00",
+        "urls": {
+            "assets": "http:\/\/trpo\/wp-content\/plugins\/elementor-pro\/assets\/",
+            "rest": "http:\/\/trpo\/wp-json\/"
+        },
+        "shareButtonsNetworks": {
+            "facebook": {"title": "Facebook", "has_counter": true},
+            "twitter": {"title": "Twitter"},
+            "linkedin": {"title": "LinkedIn", "has_counter": true},
+            "pinterest": {"title": "Pinterest", "has_counter": true},
+            "reddit": {"title": "Reddit", "has_counter": true},
+            "vk": {"title": "VK", "has_counter": true},
+            "odnoklassniki": {"title": "OK", "has_counter": true},
+            "tumblr": {"title": "Tumblr"},
+            "digg": {"title": "Digg"},
+            "skype": {"title": "Skype"},
+            "stumbleupon": {"title": "StumbleUpon", "has_counter": true},
+            "mix": {"title": "Mix"},
+            "telegram": {"title": "Telegram"},
+            "pocket": {"title": "Pocket", "has_counter": true},
+            "xing": {"title": "XING", "has_counter": true},
+            "whatsapp": {"title": "WhatsApp"},
+            "email": {"title": "Email"},
+            "print": {"title": "Print"}
+        },
+        "facebook_sdk": {"lang": "ru_RU", "app_id": ""},
+        "lottie": {"defaultAnimationUrl": "http:\/\/trpo\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}
+    };
+</script>
+<script src='../../wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.7.5'
+        id='elementor-pro-frontend-js'></script>
+<script src='../../wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2'
+        id='elementor-waypoints-js'></script>
+<script src='../../wp-includes/js/jquery/ui/core.min.js?ver=1.13.1' id='jquery-ui-core-js'></script>
+<script id='elementor-frontend-js-before'>
+    var elementorFrontendConfig = {
+        "environmentMode": {"edit": false, "wpPreview": false, "isScriptDebug": false},
+        "i18n": {
+            "shareOnFacebook": "\u041f\u043e\u0434\u0435\u043b\u0438\u0442\u044c\u0441\u044f \u0432 Facebook",
+            "shareOnTwitter": "\u041f\u043e\u0434\u0435\u043b\u0438\u0442\u044c\u0441\u044f \u0432 Twitter",
+            "pinIt": "\u0417\u0430\u043f\u0438\u043d\u0438\u0442\u044c",
+            "download": "\u0421\u043a\u0430\u0447\u0430\u0442\u044c",
+            "downloadImage": "\u0421\u043a\u0430\u0447\u0430\u0442\u044c \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435",
+            "fullscreen": "\u0412\u043e \u0432\u0435\u0441\u044c \u044d\u043a\u0440\u0430\u043d",
+            "zoom": "\u0423\u0432\u0435\u043b\u0438\u0447\u0435\u043d\u0438\u0435",
+            "share": "\u041f\u043e\u0434\u0435\u043b\u0438\u0442\u044c\u0441\u044f",
+            "playVideo": "\u041f\u0440\u043e\u0438\u0433\u0440\u0430\u0442\u044c \u0432\u0438\u0434\u0435\u043e",
+            "previous": "\u041d\u0430\u0437\u0430\u0434",
+            "next": "\u0414\u0430\u043b\u0435\u0435",
+            "close": "\u0417\u0430\u043a\u0440\u044b\u0442\u044c"
+        },
+        "is_rtl": false,
+        "breakpoints": {"xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600},
+        "responsive": {
+            "breakpoints": {
+                "mobile": {
+                    "label": "\u0422\u0435\u043b\u0435\u0444\u043e\u043d",
+                    "value": 767,
+                    "default_value": 767,
+                    "direction": "max",
+                    "is_enabled": true
+                },
+                "mobile_extra": {
+                    "label": "\u0422\u0435\u043b\u0435\u0444\u043e\u043d \u0414\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0435",
+                    "value": 880,
+                    "default_value": 880,
+                    "direction": "max",
+                    "is_enabled": false
+                },
+                "tablet": {
+                    "label": "\u041f\u043b\u0430\u043d\u0448\u0435\u0442",
+                    "value": 1024,
+                    "default_value": 1024,
+                    "direction": "max",
+                    "is_enabled": true
+                },
+                "tablet_extra": {
+                    "label": "\u041f\u043b\u0430\u043d\u0448\u0435\u0442 \u0414\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0435",
+                    "value": 1200,
+                    "default_value": 1200,
+                    "direction": "max",
+                    "is_enabled": false
+                },
+                "laptop": {
+                    "label": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a",
+                    "value": 1366,
+                    "default_value": 1366,
+                    "direction": "max",
+                    "is_enabled": false
+                },
+                "widescreen": {
+                    "label": "\u0428\u0438\u0440\u043e\u043a\u043e\u0444\u043e\u0440\u043c\u0430\u0442\u043d\u044b\u0435",
+                    "value": 2400,
+                    "default_value": 2400,
+                    "direction": "min",
+                    "is_enabled": false
                 }
-            },
-            "version": "3.7.4",
-            "is_static": false,
-            "experimentalFeatures": {
-                "e_dom_optimization": true,
-                "e_optimized_assets_loading": true,
-                "e_optimized_css_loading": true,
-                "a11y_improvements": true,
-                "additional_custom_breakpoints": true,
-                "e_import_export": true,
-                "e_hidden_wordpress_widgets": true,
-                "theme_builder_v2": true,
-                "landing-pages": true,
-                "elements-color-picker": true,
-                "favorite-widgets": true,
-                "admin-top-bar": true,
-                "page-transitions": true,
-                "notes": true,
-                "form-submissions": true,
-                "e_scroll_snap": true
-            },
-            "urls": {"assets": "http:\/\/trpo\/wp-content\/plugins\/elementor\/assets\/"},
-            "settings": {"page": [], "editorPreferences": []},
-            "kit": {
-                "active_breakpoints": ["viewport_mobile", "viewport_tablet"],
-                "global_image_lightbox": "yes",
-                "lightbox_enable_counter": "yes",
-                "lightbox_enable_fullscreen": "yes",
-                "lightbox_enable_zoom": "yes",
-                "lightbox_enable_share": "yes",
-                "lightbox_title_src": "title",
-                "lightbox_description_src": "description"
-            },
-            "post": {"id": 5, "title": "TRPO", "excerpt": "", "featuredImage": false}
-        };
-    </script>
-    <script src='../../wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.7.4'
-            id='elementor-frontend-js'></script>
-    <script src='../../wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.7.5'
-            id='pro-elements-handlers-js'></script>
+            }
+        },
+        "version": "3.7.4",
+        "is_static": false,
+        "experimentalFeatures": {
+            "e_dom_optimization": true,
+            "e_optimized_assets_loading": true,
+            "e_optimized_css_loading": true,
+            "a11y_improvements": true,
+            "additional_custom_breakpoints": true,
+            "e_import_export": true,
+            "e_hidden_wordpress_widgets": true,
+            "theme_builder_v2": true,
+            "landing-pages": true,
+            "elements-color-picker": true,
+            "favorite-widgets": true,
+            "admin-top-bar": true,
+            "page-transitions": true,
+            "notes": true,
+            "form-submissions": true,
+            "e_scroll_snap": true
+        },
+        "urls": {"assets": "http:\/\/trpo\/wp-content\/plugins\/elementor\/assets\/"},
+        "settings": {"page": [], "editorPreferences": []},
+        "kit": {
+            "active_breakpoints": ["viewport_mobile", "viewport_tablet"],
+            "global_image_lightbox": "yes",
+            "lightbox_enable_counter": "yes",
+            "lightbox_enable_fullscreen": "yes",
+            "lightbox_enable_zoom": "yes",
+            "lightbox_enable_share": "yes",
+            "lightbox_title_src": "title",
+            "lightbox_description_src": "description"
+        },
+        "post": {"id": 5, "title": "TRPO", "excerpt": "", "featuredImage": false}
+    };
+</script>
+<script src='../../wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.7.4'
+        id='elementor-frontend-js'></script>
+<script src='../../wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.7.5'
+        id='pro-elements-handlers-js'></script>
 </body>
 </html>
