@@ -19,12 +19,12 @@ if ($insert_data_FIO == null || $insert_data_position == null || $insert_data_sp
         $file = $_FILES['file'];
         $name = $file['name'];
         $pathFile = __DIR__ ."../../../images/".$name;
-        if (!move_uploaded_file($file['tmp_name'], $pathFile)) {
-            header("Location: http://trpo/status/canceled.php");
-        }
 
         $updated_data = mysqli_query($link, "INSERT INTO `teachers` (`FIO`, `position`, `speciality`, `category`, `experience`, `login`, `password`, `path_image`) VALUES ('$insert_data_FIO', '$insert_data_position', '$insert_data_speciality', '$insert_data_category', '$insert_data_experience', '$insert_data_login', '$insert_data_password', '$name')");
 
+    } else {
+        $pathFile = __DIR__."../../../images/56842259.png";
+        header("Location: http://trpo/status/canceled.php");
     }
 
     header("Location: http://trpo/status/confirm.php");

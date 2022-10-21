@@ -7,6 +7,9 @@ $id = $_SESSION['userid'];
 $teacher_info = mysqli_query($link, "SELECT * FROM `teachers` WHERE `id` = '$id'");
 $teacher_info = mysqli_fetch_assoc($teacher_info);
 
+$disciplina_info = mysqli_query($link, "SELECT * FROM `disciplina`");
+$disciplina_info = mysqli_fetch_assoc($disciplina_info);
+
 ?>
 
 <!DOCTYPE html>
@@ -24,6 +27,7 @@ $teacher_info = mysqli_fetch_assoc($teacher_info);
           href="../../comments/feed/index.htm">
     <link rel="stylesheet" href="../../styles/teacher_info_style.css">
     <link rel="stylesheet" href="../../styles/mainStyle.css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script>
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
@@ -558,7 +562,7 @@ $teacher_info = mysqli_fetch_assoc($teacher_info);
             border-top: 1px solid #777777;
             border-bottom: 1px solid #777777;
             box-shadow: inset 0 1px 0 #999999, inset 0 -1px 0 #999999;
-            background: linear-gradient(#9595b6, #5a567f);
+            background: linear-gradient(#9595b6, #4234c9);
             color: white;
             padding: 10px 15px;
             position: relative;
@@ -770,11 +774,12 @@ $teacher_info = mysqli_fetch_assoc($teacher_info);
 
                                 <div data-elementor-type="wp-page" data-elementor-id="5" class="elementor elementor-5">
                                     <section
-                                        class="elementor-section elementor-top-section elementor-element elementor-element-6b20e447 elementor-section-height-full elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
-                                        data-id="6b20e447" data-element_type="section"
-                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                            class="elementor-section elementor-top-section elementor-element elementor-element-6b20e447 elementor-section-height-full elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+                                            data-id="6b20e447" data-element_type="section"
+                                            data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                         <div class="elementor-background-overlay"></div>
-                                        <div class="elementor-container elementor-column-gap-wider" style="align-items: start">
+                                        <div class="elementor-container elementor-column-gap-wider"
+                                             style="align-items: start">
                                             <div class="container">
                                                 <div class="buttons_above_the_table_teacher">
                                                     <form action="../teachers/table_teachers.php" method="post" style="display: flex;
@@ -792,7 +797,8 @@ $teacher_info = mysqli_fetch_assoc($teacher_info);
                                                 <div class="container_card">
                                                     <div class="teacher_header_card">
                                                         <div class="teacher_picture">
-                                                            <img src="../../images/<?= $teacher_info['path_image'] ?>" alt="">
+                                                            <img src="../../images/<?= $teacher_info['path_image'] ?>"
+                                                                 alt="">
                                                         </div>
                                                         <div class="description">
                                                             <div class="teacher_name">
@@ -838,6 +844,35 @@ $teacher_info = mysqli_fetch_assoc($teacher_info);
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <div style="display: flex; justify-content: center">
+                                                        <h1>Ваша занятость</h1>
+                                                    </div>
+                                                    <div style="margin: 1% 1% 0 1%">
+                                                        <div class="table_blur">
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        $(document).ready(function () {
+                                                            load_data();
+
+                                                            function load_data(page) {
+                                                                $.ajax({
+                                                                    url: "pagination.php",
+                                                                    method: "POST",
+                                                                    data: {page: page},
+                                                                    success: function (data) {
+                                                                        $('.table_blur').html(data);
+                                                                    }
+                                                                })
+                                                            }
+
+                                                            $(document).on('click', '.pagination_link', function () {
+                                                                let page = $(this).attr("id");
+                                                                load_data(page);
+                                                            })
+                                                        })
+
+                                                    </script>
                                                 </div>
                                             </div>
                                     </section>

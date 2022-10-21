@@ -477,7 +477,7 @@
 
 .elementor img {
     height: auto;
-    max-width: 60%;
+    max-width: 100%;
     border: none;
     border-radius: 0;
     -webkit-box-shadow: none;

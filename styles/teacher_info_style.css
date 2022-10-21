@@ -30,7 +30,9 @@
 
 .teacher_picture {
     position: relative;
-    width: 100%;
+    width: 385px;
+    height: 100%;
+    margin: 3% 10%;
     display: flex;
     justify-content: center;
 }
