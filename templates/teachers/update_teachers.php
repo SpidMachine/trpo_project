@@ -2,9 +2,13 @@
 session_start();
 
 require_once "../../connect.php";
+
+$zakrep_disciplina = mysqli_query($link, "SELECT `name` FROM `disciplina`");
+$zakrep_disciplina_arr = mysqli_fetch_assoc($zakrep_disciplina);
+
 $teacher_id = $_GET['id'];
 $teacher = mysqli_query($link, "SELECT * FROM `teachers` WHERE `id` = '$teacher_id'");
-$teacher = mysqli_fetch_assoc($teacher);
+$teacher_arr = mysqli_fetch_assoc($teacher);
 
 ?>
 
@@ -810,14 +814,14 @@ $teacher = mysqli_fetch_assoc($teacher);
                                                      style="margin-left: 15%; align-items: baseline; display: table;">
                                                     <label>
                                                         <input style="margin-bottom: 1%" type="hidden" name="id"
-                                                               value="<?= $teacher['id'] ?> ">
+                                                               value="<?= $teacher_arr['id'] ?> ">
                                                     </label>
                                                     <label>
                                                         <input id="insert_data_FIO" name="insert_data_FIO" style="background-color: white;
         background-position: 10px 10px;
         background-repeat: no-repeat;
         padding: 10px; padding-left: 30px; margin-bottom: 1%" placeholder="ФИО" type="text"
-                                                               value="<?= $teacher['FIO'] ?>">
+                                                               value="<?= $teacher_arr['FIO'] ?>">
                                                     </label>
                                                     <label>
                                                         <input id="insert_data_position" name="insert_data_position"
@@ -825,7 +829,7 @@ $teacher = mysqli_fetch_assoc($teacher);
         background-position: 10px 10px;
         background-repeat: no-repeat;
         padding: 10px; padding-left: 30px; margin-bottom: 1%" placeholder="Должность" type="text"
-                                                               value="<?= $teacher['position'] ?>">
+                                                               value="<?= $teacher_arr['position'] ?>">
                                                     </label>
                                                     <label>
                                                         <input id="insert_data_speciality" name="insert_data_speciality"
@@ -833,7 +837,7 @@ $teacher = mysqli_fetch_assoc($teacher);
         background-position: 10px 10px;
         background-repeat: no-repeat;
         padding: 10px; padding-left: 30px; margin-bottom: 1%" placeholder="Специальность" type="text"
-                                                               value="<?= $teacher['speciality'] ?>">
+                                                               value="<?= $teacher_arr['speciality'] ?>">
                                                     </label>
                                                     <label>
                                                         <input id="insert_data_category" name="insert_data_category"
@@ -841,7 +845,7 @@ $teacher = mysqli_fetch_assoc($teacher);
         background-position: 10px 10px;
         background-repeat: no-repeat;
         padding: 10px; padding-left: 30px; margin-bottom: 1%" placeholder="Квалификационная категория" type="text"
-                                                               value="<?= $teacher['category'] ?>">
+                                                               value="<?= $teacher_arr['category'] ?>">
                                                     </label>
                                                     <label>
                                                         <input id="insert_data_experience" name="insert_data_experience"
@@ -849,10 +853,17 @@ $teacher = mysqli_fetch_assoc($teacher);
         background-position: 10px 10px;
         background-repeat: no-repeat;
         padding: 10px; padding-left: 30px; margin-bottom: 1%" placeholder="Стаж" type="number"
-                                                               value="<?= $teacher['experience'] ?>">
+                                                               value="<?= $teacher_arr['experience'] ?>">
                                                     </label>
                                                     <label>
-                                                        <input type="file" name="file" style="display: flex; margin-bottom: 1%;" value="<?= $teacher['path_image'] ?>">
+                                                        <select name="insert_zakrep_disciplina">
+                                                            <?php while ($result = mysqli_fetch_array($zakrep_disciplina)) {?>
+                                                                <option selected ><?= $result["name"] ?></option>
+                                                            <?php } ?>
+                                                        </select>
+                                                    </label>
+                                                    <label>
+                                                        <input type="file" name="file" style="display: flex; margin-bottom: 1%;" value="">
                                                     </label>
                                                     <button
                                                             id="sub1"

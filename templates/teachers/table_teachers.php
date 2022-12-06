@@ -776,7 +776,7 @@ require_once "../../auth.php";
                                                 </div>
                                                 <div style="display: inline-flex">
                                                     <!--                                                    <a href="../subjects/table_subjects.php">-->
-                                                    <form action="../subjects/table_subjects.php" method="post">
+                                                    <form action="../subjects/table_subjects.php" method="post" style="margin: 0 10px 0 0">
                                                         <input type="submit"
                                                                id="sub1"
                                                                class="elementor-size-md elementor-button"
@@ -797,7 +797,7 @@ require_once "../../auth.php";
                                                         </label>
                                                     </form>
                                                     <!--                                                    </a>-->
-                                                    <a href="add_data_teachers.php">
+                                                    <a href="add_data_teachers.php" style="margin: 0 10px 0 0">
                                                         <button type="button"
                                                                 id="sub1"
                                                                 class="elementor-size-md elementor-button"

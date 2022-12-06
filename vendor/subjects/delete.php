@@ -6,4 +6,4 @@ $id = $_GET['id'];
 
 mysqli_query($link, "DELETE FROM `disciplina` WHERE `disciplina`.`id` = '$id'");
 
-header("Location: ../../status/confirm.php");
+header("Location: ../../status_disciplina/confirm.php");

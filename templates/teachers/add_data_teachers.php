@@ -3,8 +3,10 @@ session_start();
 
 require_once "../../connect.php";
 
-?>
+$zakrep_disciplina = mysqli_query($link, "SELECT `name` FROM `disciplina`");
+$zakrep_disciplina_arr = mysqli_fetch_assoc($zakrep_disciplina);
 
+?>
 <!DOCTYPE html>
 <html class="html" lang="ru-RU">
 <head>
@@ -857,7 +859,14 @@ require_once "../../connect.php";
         padding: 10px; padding-left: 30px; margin-bottom: 1%" placeholder="Пароль" type="text"><br>
                                                     </label>
                                                     <label>
-                                                        <input type="file" name="file" style="display: flex; margin-bottom: 1%;">
+                                                        <select name="insert_zakrep_disciplina" style="background-color: white">
+                                                            <?php foreach ($zakrep_disciplina as $result) {?>
+                                                                <option><?= $result["name"] ?></option>
+                                                            <?php } ?>
+                                                        </select>
+                                                    </label>
+                                                    <label>
+                                                        <input type="file" name="file" style="display: flex; margin: 1% 0 1% 0;">
                                                     </label>
                                                     <button
                                                             id="sub1"

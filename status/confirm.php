@@ -2,9 +2,7 @@
 session_start();
 require_once "../connect.php";
 
-$id = $_SESSION['userid'];
-
-$teacher_info = mysqli_query($link, "SELECT * FROM `teachers` WHERE `id` = '$id'");
+$teacher_info = mysqli_query($link, "SELECT * FROM `teachers`");
 $teacher_info = mysqli_fetch_assoc($teacher_info);
 
 ?>

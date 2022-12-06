@@ -768,7 +768,7 @@ require_once "../../auth.php";
                                                     <h1 style="text-transform: uppercase; font-weight: bold;">Админ-панель👑</h1>
                                                 </div>
                                                 <div style="display: inline-flex">
-                                                    <form action="../teachers/table_teachers.php" method="post">
+                                                    <form action="../teachers/table_teachers.php" method="post" style="margin: 0 10px 0 0">
                                                         <input type="submit"
                                                                id="sub1"
                                                                class="elementor-size-md elementor-button"
@@ -788,7 +788,7 @@ require_once "../../auth.php";
                                                                    value="root">
                                                         </label>
                                                     </form>
-                                                    <a href="add_data_subjects.php">
+                                                    <a href="add_data_subjects.php" style="margin: 0 10px 0 0">
                                                         <button type="button"
                                                                 id="sub1"
                                                                 class="elementor-size-md elementor-button"
@@ -827,7 +827,7 @@ require_once "../../auth.php";
 <!--                                                            <a href="../../vendor/subjects/delete.php?id=--><?//= $row["id"]?><!--">-->
 <!--                                                            <button style='background-color: red; width: 30px'>✖</button></a>-->
 <!--                                                            <a href='update_subjects.php?id=--><?//=$row["id"]?><!--'><button style='background-color: #0ca5de; width: 30px'>✎</button></a>-->
-<!--<!--                                                            <a href="read_teacher_info.php?id=-->--><?////= $row['id'] ?><!--<!--"><button style='background-color: #75f155; width: 30px'>🛈</button></a></td>-->-->
+<!--                                                     <a href="read_teacher_info.php?id=-->--><?////= $row['id'] ?><!--<"><button style='background-color: #75f155; width: 30px'>🛈</button></a></td>-->-->
 <!--                                                        --><?php
 //                                                        echo "</tr>";
 //                                                    }
@@ -881,7 +881,7 @@ require_once "../../auth.php";
 
 <a aria-label="Перейти наверх страницы" href="#" id="scroll-top" class="scroll-top-right"><i class=" fa fa-angle-up"
                                                                                              aria-hidden="true"
-                                                                                             role="img"></i></td>
+                                                                                             role="img"></i></a>
 
 
     <link rel='stylesheet' id='e-animations-css'

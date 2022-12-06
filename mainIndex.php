@@ -1238,7 +1238,8 @@ session_start();
                                                                                                               class="elementor-field elementor-field-textual elementor-size-md">
                                                                     </div>
                                                                     <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100">
-                                                                        <input type="submit" value="Войти" style="width: inherit;background-color: #384975;border-radius: 4px;padding: 2%;color: white;font-size: 22px;font-weight: bold;">
+                                                                        <input type="submit" value="Войти" style="width: inherit;
+                                                                        background-color: #384975;border-radius: 4px;padding: 2%;color: white;font-size: 22px;font-weight: bold;">
                                                                     </div>
                                                                     <?php
                                                                     if (isset($_SESSION['message'])) {

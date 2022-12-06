@@ -7,6 +7,7 @@ $insert_data_position = $_POST['insert_data_position'];
 $insert_data_speciality = $_POST['insert_data_speciality'];
 $insert_data_category = $_POST['insert_data_category'];
 $insert_data_experience = $_POST['insert_data_experience'];
+$insert_zakrep_disciplina = $_POST['insert_zakrep_disciplina'];
 $id = $_POST['id'];
 
 if (empty($insert_data_FIO)) {
@@ -27,7 +28,7 @@ if (!empty($_FILES['file'])) {
     $pathFile = __DIR__ ."../../../images/".$name;
     move_uploaded_file($file['tmp_name'], $pathFile);
 
-    mysqli_query($link, "UPDATE `teachers` SET `FIO` = '$insert_data_FIO', `position` = '$insert_data_position', `speciality` = '$insert_data_speciality', `category` = '$insert_data_category', `experience` = '$insert_data_experience', `path_image` = '$name' WHERE `teachers`.`id` = '$id'");
+    mysqli_query($link, "UPDATE `teachers` SET `zakrep_disciplina` = '$insert_zakrep_disciplina', `FIO` = '$insert_data_FIO', `position` = '$insert_data_position', `speciality` = '$insert_data_speciality', `category` = '$insert_data_category', `experience` = '$insert_data_experience', `path_image` = '$name' WHERE `teachers`.`id` = '$id'");
 
 }
 

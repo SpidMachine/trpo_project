@@ -7,6 +7,8 @@ $id = $_GET['id'];
 $teacher_info = mysqli_query($link, "SELECT * FROM `teachers` WHERE `id` = '$id'");
 $teacher_info = mysqli_fetch_assoc($teacher_info);
 
+$result = mysqli_query($link, "SELECT * FROM `disciplina`")
+
 ?>
 
 <!DOCTYPE html>
@@ -842,6 +844,14 @@ $teacher_info = mysqli_fetch_assoc($teacher_info);
                                                                         </td>
                                                                         <td>
                                                                             <?= $teacher_info['experience'] ?>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <span style="font-weight: bolder">Закрпленная дисциплина:</span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <?= $teacher_info['zakrep_disciplina'] ?>
                                                                         </td>
                                                                     </tr>
                                                                 </table>

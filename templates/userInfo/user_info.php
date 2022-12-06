@@ -844,9 +844,6 @@ $disciplina_info = mysqli_fetch_assoc($disciplina_info);
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div style="display: flex; justify-content: center">
-                                                        <h1>Ваша занятость</h1>
-                                                    </div>
                                                     <div style="margin: 1% 1% 0 1%">
                                                         <div class="table_blur">
                                                         </div>
@@ -857,7 +854,7 @@ $disciplina_info = mysqli_fetch_assoc($disciplina_info);
 
                                                             function load_data(page) {
                                                                 $.ajax({
-                                                                    url: "pagination.php",
+                                                                    url: "paginationUserInfo.php",
                                                                     method: "POST",
                                                                     data: {page: page},
                                                                     success: function (data) {

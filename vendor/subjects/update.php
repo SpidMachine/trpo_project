@@ -20,4 +20,4 @@ if (empty($insert_data_subject_hours)) {
 mysqli_query($link, "UPDATE `disciplina` SET `name` = '$insert_data_subject_name', `speciality` = '$insert_data_subject_speciality', `hours` = '$insert_data_subject_hours' WHERE `disciplina`.`id` = '$id'");
 
 
-header("Location: ../../status/confirm.php");
+header("Location: ../../status_disciplina/confirm.php");
